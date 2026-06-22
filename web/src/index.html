@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>sokobantron dev</title>
+  <style>
+    body { font-family: monospace; padding: 2rem; }
+    .element { margin: 4rem 0; }
+    canvas { border: 1px solid #ccc; display: block; }
+  </style>
+</head>
+<body>
+  <h1>sokobantron elements</h1>
+
+  <div class="element">
+    <h2>arena-builder</h2>
+    <canvas id="arena-builder" width="600" height="400"></canvas>
+  </div>
+
+  <div class="element">
+    <h2>level-player + config graph</h2>
+    <canvas id="player-graph" width="900" height="400"></canvas>
+  </div>
+
+  <div class="element">
+    <h2>level-player + SCC graph</h2>
+    <canvas id="player-scc" width="900" height="400"></canvas>
+  </div>
+
+  <div class="element">
+    <h2>example states</h2>
+    <canvas id="example-states" width="600" height="200"></canvas>
+  </div>
+
+  <div class="element">
+    <h2>graph explorer</h2>
+    <canvas id="graph-explorer" width="600" height="400"></canvas>
+  </div>
+
+  <script type="module" src="/src/loader.ts"></script>
+</body>
+</html>

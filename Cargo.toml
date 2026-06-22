@@ -1,6 +1,17 @@
-[package]
-name = "sokobantron"
-version = "0.1.0"
-edition = "2024"
+[workspace]
+members = [
+    "crates/sokoban-core",
+    "crates/sokoban-solver",
+    "crates/sokoban-cli",
+    "crates/sokoban-bevy",
+    "crates/sokoban-wasm",
+]
+resolver = "2"
 
-[dependencies]
+[workspace.dependencies]
+sokoban-core   = { path = "crates/sokoban-core" }
+sokoban-solver = { path = "crates/sokoban-solver" }
+sokoban-bevy   = { path = "crates/sokoban-bevy" }
+serde          = { version = "1", features = ["derive"] }
+bevy           = { version = "0.15", default-features = false }
+wasm-bindgen   = "0.2"

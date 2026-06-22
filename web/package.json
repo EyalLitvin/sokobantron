@@ -1,0 +1,12 @@
+{
+  "name": "sokobantron-dev",
+  "private": true,
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "wasm": "wasm-pack build ../crates/sokoban-wasm --target web --out-dir ../../web/pkg"
+  },
+  "devDependencies": {
+    "vite": "^6.0.0"
+  }
+}

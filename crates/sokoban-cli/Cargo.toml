@@ -1,0 +1,12 @@
+[package]
+name = "sokoban-cli"
+version = "0.1.0"
+edition = "2024"
+
+[[bin]]
+name = "sokoban-cli"
+path = "src/main.rs"
+
+[dependencies]
+sokoban-core.workspace = true
+sokoban-solver.workspace = true

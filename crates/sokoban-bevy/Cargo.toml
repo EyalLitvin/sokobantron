@@ -1,0 +1,9 @@
+[package]
+name = "sokoban-bevy"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+sokoban-core.workspace = true
+sokoban-solver.workspace = true
+bevy.workspace = true
